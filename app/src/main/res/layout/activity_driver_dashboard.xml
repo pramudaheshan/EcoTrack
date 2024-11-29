@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    android:gravity="center_horizontal">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/driver_dashboard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Driver Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="#4CAF50" />
+
+    <!-- Options Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Check Daily Work Updates -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_work_updates" />
+
+            <Button
+                android:id="@+id/btn_check_work_updates"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Check Daily Work Updates"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- Choose Best Route -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_route" />
+
+            <Button
+                android:id="@+id/btn_choose_best_route"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Choose Best Route"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- Update Garbage Load -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_garbage_load" />
+
+            <Button
+                android:id="@+id/btn_update_garbage_load"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Update Garbage Load"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".adminActivity.CreateGarbageBinActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Garbage Bin"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#4CAF50" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Area -->
+            <EditText
+                android:id="@+id/create_garbage_bin_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Area"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:textColorHint="#757575"
+                android:textColor="#000000" />
+
+            <!-- City -->
+            <EditText
+                android:id="@+id/create_garbage_bin_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter City"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:textColorHint="#757575"
+                android:textColor="#000000" />
+
+            <!-- Map Section -->
+            <fragment
+                android:id="@+id/map_container"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <!-- Location Coordinates -->
+            <TextView
+                android:id="@+id/selected_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Location: Lat, Long"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp" />
+
+            <!-- Load Type -->
+            <Spinner
+                android:id="@+id/create_garbage_bin_load_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp" />
+
+            <!-- Cycle Period -->
+            <Spinner
+                android:id="@+id/create_garbage_bin_cycle_period"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp" />
+
+            <!-- Assign Driver -->
+            <Spinner
+                android:id="@+id/create_garbage_bin_assign_driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp" />
+
+            <!-- Best Route -->
+            <EditText
+                android:id="@+id/create_garbage_bin_best_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Best Route"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:textColorHint="#757575"
+                android:textColor="#000000" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/create_garbage_bin_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/admin_dashboard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="#4CAF50" />
+
+    <!-- Buttons for Admin Options -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Create Garbage Bin -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_create"
+                />
+
+            <Button
+                android:id="@+id/btn_create_garbage_bin"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create Garbage Bin"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- Update/Delete Garbage Bin -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_update_delete" />
+
+            <Button
+                android:id="@+id/btn_update_delete_garbage_bin"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Update/Delete Garbage Bin"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- Assign Best Route for Drivers -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_route" />
+
+            <Button
+                android:id="@+id/btn_assign_best_route"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Assign Best Route"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- Manage Driver -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_driver" />
+
+            <Button
+                android:id="@+id/btn_manage_driver"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Manage Driver"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- View Garbage Report -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_report" />
+
+            <Button
+                android:id="@+id/btn_view_garbage_report"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View Garbage Report"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- View Complaints -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_complaints" />
+
+            <Button
+                android:id="@+id/btn_view_complaints"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View Complaints"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

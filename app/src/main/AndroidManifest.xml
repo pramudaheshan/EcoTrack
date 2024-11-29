@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcoTrack"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDzpXzXaTWw4zp2z8--UNXlTQXtpmPS57M" />
+        <activity
+            android:name=".userActivity.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userActivity.MyComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userActivity.RegisterComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driverActivity.UpdateGarbageLoadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driverActivity.BestRouteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driverActivity.WorkUpdatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminActivity.ViewComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminActivity.ViewGarbageReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminActivity.ManageDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminActivity.AssignBestRouteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminActivity.UpdateDeleteGarbageBinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminActivity.CreateGarbageBinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    android:gravity="center_horizontal">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/user_dashboard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="#4CAF50" />
+
+    <!-- Buttons and Icons Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Register Complaint -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_complaint" />
+
+            <Button
+                android:id="@+id/btn_register_complaint"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Register Complaint"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- My Complaints -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_complaints" />
+
+            <Button
+                android:id="@+id/btn_my_complaints"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="My Complaints and Status"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <!-- Update Profile -->
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_profile" />
+
+            <Button
+                android:id="@+id/btn_update_profile"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Update Profile"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
